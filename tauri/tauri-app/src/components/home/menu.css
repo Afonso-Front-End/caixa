@@ -1,0 +1,53 @@
+.topo {
+    height: 150px;
+}
+
+menu {
+    height: 97%;
+    overflow: auto;
+}
+
+menu nav {
+    padding: 0.5rem 1.5rem;
+}
+
+menu nav ul {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+menu nav ul li {
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0.5rem;
+    position: relative;
+}
+
+menu nav ul li:hover {
+    background-color: #2d303363;
+}
+
+menu nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 1rem;
+    cursor: grab;
+}
+
+.selected {
+    background-color: #2D3033;
+}
+
+.selected span {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #D93636;
+    position: absolute;
+    left: 0px;
+
+}

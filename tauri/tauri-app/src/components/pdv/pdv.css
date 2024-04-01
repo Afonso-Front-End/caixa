@@ -1,0 +1,306 @@
+.container-pdv {
+    width: 100%;
+    height: 100%;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-pdv {
+    width: 100%;
+    height: 100%;
+    padding: 0.3rem;
+}
+
+.table_opracoes {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    gap: 10px;
+}
+
+.container-table-tela {
+    width: calc(100% - 400px);
+    border: 1px solid rgba(128, 128, 128, 0.261);
+    padding: 0.2rem;
+    overflow: auto;
+}
+
+.container-table-tela::-webkit-scrollbar {
+    width: 0;
+}
+
+.table-tela {
+    /* text-align: justify; */
+    width: 100%;
+    font-size: 14px;
+}
+
+.thead-tela {
+    background-color: #202225;
+}
+
+.thead-tela tr th {
+    letter-spacing: 1px;
+    color: wheat;
+}
+
+.tbody-tela {
+    background-color: #202225a9;
+}
+
+.tbody-tela tr td:nth-child(5),
+.tbody-tela tr td:nth-child(4) {
+    color: #F2C335;
+}
+
+.operacoes {
+    width: 400px;
+    height: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.261);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    overflow: auto;
+}
+
+.tela-buttons {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.261);
+    overflow: hidden;
+    margin-top: 5px;
+    padding: 0rem 0.5rem;
+    text-transform: uppercase;
+}
+
+.btn-subtotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-operacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0.5rem;
+}
+
+#operacao-codigo,
+#opreracao-unidade {
+    color: black;
+}
+
+#operacao-codigo::placeholder,
+#opreracao-unidade::placeholder {
+    font-size: 20px;
+}
+
+#opreracao-adicionar {
+    cursor: pointer;
+    background-color: transparent;
+    height: 4rem;
+    border: none;
+    background-color: #03A64A;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.261);
+
+}
+
+#opreracao-adicionar:disabled {
+    cursor: no-drop;
+    background-color: #D93636;
+    text-transform: lowercase;
+}
+
+
+#opreracao-unidade:disabled {
+    cursor: no-drop;
+    background-color: #202225;
+}
+
+#opreracao-unidade:disabled::placeholder,
+#opreracao-adicionar:disabled {
+    /* color: rgba(128, 128, 128, 0.372); */
+}
+
+#operacao-codigo,
+#opreracao-unidade {
+    background-color: transparent;
+    height: 4rem;
+    border: none;
+    background-color: #FFF;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.261);
+}
+
+.form-pagamento {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.13rem 0.5rem;
+    position: relative;
+    /* overflow: auto; */
+}
+
+.collun {
+    display: flex;
+    gap: 5px;
+}
+
+#credito,
+#debito,
+#dinheiro,
+#pix,
+#a-prazo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #202225;
+
+}
+
+#credito button,
+#debito button,
+#dinheiro button,
+#pix button,
+#a-prazo button {
+    height: 3.2rem;
+    border: 1px solid rgba(128, 128, 128, 0.261);
+    cursor: pointer;
+    background-color: #03A64A;
+}
+
+#credito button:disabled,
+#debito button:disabled,
+#dinheiro button:disabled,
+#pix button:disabled,
+#a-prazo button:disabled {
+    cursor: no-drop;
+    background-color: #D93636;
+}
+
+#credito p,
+#debito p,
+#dinheiro p,
+#pix p,
+#a-prazo p {
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.finalizar {
+    display: flex;
+    gap: 5px;
+    padding: 0.5rem 0.5rem;
+}
+
+#cancelar-compra,
+#finalizar-compra {
+    width: 100%;
+}
+
+#cancelar-compra button {
+    background-color: #D93636;
+    color: #202225;
+}
+
+#finalizar-compra button {
+    background-color: #03A64A;
+    color: #FFF;
+}
+
+#cancelar-compra button,
+#finalizar-compra button {
+    width: 100%;
+    height: 3.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.261);
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+#cancelar-compra button:disabled,
+#finalizar-compra button:disabled {
+    cursor: no-drop;
+}
+
+#finalizar-compra button:disabled {
+    background-color: #D93636;
+    color: black;
+}
+
+.entrada-dinheiro {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 0 0.5rem;
+}
+
+.entrada-dinheiro div {
+    width: 100%;
+}
+
+#entrada-dinheiro-total,
+#saida-dinheiro-troco {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+#entrada-dinheiro-total input {
+    color: black;
+    padding: 0 0.5rem;
+}
+.input-valor-recebido {
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#entrada-dinheiro-total input:disabled {
+    background-color: #202225;
+}
+
+
+#entrada-dinheiro-total input,
+#saida-dinheiro-troco button {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 3.5rem;
+    border-radius: 3px;
+    font-size: 25px;
+}
+
+.data-cliente {
+    padding: 0.5rem 0;
+    /* position: absolute; */
+    top: 180px;
+}
+
+#nome_client,
+#cpf_client {
+    width: 100%;
+    padding: 0.6rem;
+    color: black;
+    margin-top: 5px;
+}

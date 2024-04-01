@@ -1,0 +1,66 @@
+@media screen and (max-width: 1400px) {
+    .left {
+        max-width: 300px;
+    }
+
+    .rigth {
+        width: calc(100% - 300px);
+    }
+
+    menu nav ul li a {
+        padding: 0.5rem;
+
+    }
+
+    .container-table-tela {
+        width: calc(100% - 300px);
+    }
+
+    .operacoes {
+        width: 300px;
+    }
+
+
+    #operacao-codigo,
+    #opreracao-unidade {
+        height: 2.5rem;
+        border-radius: 3px;
+    }
+
+    #opreracao-adicionar {
+        height: 2.5rem;
+
+    }
+
+
+    #credito button,
+    #debito button,
+    #dinheiro button,
+    #pix button,
+    #a-prazo button {
+        height: 2.5rem;
+
+    }
+
+    #cancelar-compra button,
+    #finalizar-compra button {
+        height: 2.5rem;
+    }
+
+    #entrada-dinheiro-total input,
+    #saida-dinheiro-troco button {
+        height: 2.5rem;
+        font-size: 20px;
+    }
+    .tbody-lista td {
+        padding: 0.4rem;
+        
+    }
+
+}
+
+@media screen and (max-width: 1140px) {
+    .thead-tela tr th {
+        text-wrap: nowrap;
+    }
+}

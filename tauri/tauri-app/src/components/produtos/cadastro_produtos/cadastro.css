@@ -1,0 +1,140 @@
+.container-cadastro-produtos {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 0.5rem;
+}
+
+.content-cadastro-produtos {
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #202225;
+}
+
+.form-cadastrar-produtos {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color: #181818;
+    border: 1px solid rgba(128, 128, 128, 0.216);
+    border-radius: 4px;
+}
+
+.form-cadastrar-produtos-inputs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#produto-cadastrar,
+#codigo-cadastrar,
+#preco-cadastrar,
+#quantidade-cadastrar {
+    background-color: transparent;
+    padding: 1rem 0.5rem;
+    border: none;
+    font-size: 15px;
+    width: calc(100% - 100px);
+    outline: none;
+}
+
+#produto-cadastrar {
+    text-transform: capitalize;
+}
+
+.div-input-cadastrar {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.div-input-cadastrar label {
+    padding: 0.75rem 0.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 100px;
+}
+
+.form-button-cadastrar-produtos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#limpar,
+#salvar {
+    padding: 1.4rem 2rem;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: grab;
+}
+
+#salvar {
+    background-color: #03A63C;
+}
+
+#limpar {
+    color: #1d1e1f;
+}
+
+
+/* feedBack */
+.feedBack {
+    width: 850px;
+    height: 100px;
+    background-color: #202020;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 100px;
+    border: 1px solid rgba(128, 128, 128, 0.216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.feedBack-active {
+    height: 80px;
+    opacity: 1;
+}
+
+.loader-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    border: 4px solid #3498db;
+    border-radius: 50%;
+    border-bottom: 4px solid transparent;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

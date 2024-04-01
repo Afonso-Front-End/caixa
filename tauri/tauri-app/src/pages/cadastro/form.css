@@ -1,0 +1,104 @@
+.container-form-cadastro {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-form-cadastro {
+    width: 800px;
+    height: 500px;
+    background-color: #202225;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px #3d4149;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.detalhe {
+    width: 300px;
+    height: 100%;
+    background-color: #2D3033;
+}
+
+.form-cadastro {
+    width: 500px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#nome-cadastro,
+#email-cadastro,
+#cpf-cadastro {
+    padding: 1rem 0;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.117);
+    background-color: transparent;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+
+#email-cadastro {
+    text-transform: lowercase;
+}
+
+#email-cadastro::placeholder {
+    text-transform: capitalize;
+}
+
+#enviar-cadastro {
+    background-color: #ccc;
+    color: black;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-link-login {
+    background-color: #2D3033;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+
+/* ID global */
+#erro {
+    background-color: #BF0606;
+    margin-top: 0.7rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#sucess {
+    background-color: #04D939;
+    margin-top: 0.7rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.checkBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+.check-operador input,
+.check-admin input{
+    cursor: pointer;
+    margin-right: 5px;
+}
